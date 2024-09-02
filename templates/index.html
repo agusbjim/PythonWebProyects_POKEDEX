@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Image</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for pokemon in pokemon_list %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ pokemon['url'].split('/')[-2] }}.png"
+                 alt="{{ pokemon['name'] }}">
+        </td>
+        <td>
+            <a href="{{ url_for('pokemon_detail', pokemon_id=pokemon['url'].split('/')[-2]) }}">{{ pokemon['name'].title() }}</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,177 @@
+/* Import the Press Start 2P font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Basic reset of margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif; /* Pokémon style font */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Main text color */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffcb05; /* Pokémon yellow */
+    color: #2a75bb; /* Pokémon blue */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
+    border-bottom-left-radius: 15px; /* Rounded bottom corners */
+    border-bottom-right-radius: 15px; /* Rounded bottom corners */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px #2a75bb; /* Blue shadow for Pokémon logo effect */
+}
+
+/* Main container for the content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 0.8rem;
+    text-align: center; /* Center content in table cells */
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9; /* Light gray background for cells */
+}
+
+table a {
+    text-decoration: none;
+    color: #007BFF; /* Blue for links */
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for images */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #007BFF; /* Blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+
+/* Smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust title size */
+    }
+
+    main {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    table th, table td {
+        padding: 0.5rem; /* Reduce padding in table cells */
+    }
+
+    img {
+        margin: 0.5rem 0; /* Reduce margin around images */
+    }
+}
+
+/* Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem; /* Even smaller text */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Further reduce title size */
+    }
+
+    main {
+        padding: 0.5rem; /* Further reduce padding */
+    }
+
+    table th, table td {
+        padding: 0.3rem; /* Minimize padding in table cells */
+    }
+
+    header {
+        padding: 0.5rem; /* Reduce padding in header */
+    }
+}
+
+/* Larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.1rem; /* Slightly larger text */
+    }
+
+    h1 {
+        font-size: 3rem; /* Increase title size */
+    }
+
+    main {
+        max-width: 1200px; /* Allow more width for larger screens */
+        padding: 3rem; /* Increase padding */
+    }
+
+    table th, table td {
+        padding: 1rem; /* Increase padding in table cells */
+    }
+
+    img {
+        margin: 1.5rem 0; /* Increase margin around images */
+    }
+}

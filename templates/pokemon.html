@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ pokemon['name'].title() }}</h2>
+<img src="{{ pokemon['sprites']['front_default'] }}" alt="{{ pokemon['name'] }}">
+<p>ID: {{ pokemon['id'] }}</p>
+<h3>Abilities:</h3>
+<ul>
+    {% for ability in pokemon['abilities'] %}
+    <li>{{ ability['ability']['name'].title() }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('index') }}">Back to list</a>
+{% endblock %}
