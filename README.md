@@ -11,14 +11,14 @@ Este repositorio contiene una página web desarrollada con Python, HTML y CSS ut
 - PyCharm CE
 
 
-## Instalación
-# 1. Clona el repositorio:
+# Instalación
+## 1. Clona el repositorio:
    git clone https://github.com/agusbjim/PythonWebProyects_POKEDEX.git
 
-## Navega al directorio del proyecto:
+## 2. Navega al directorio del proyecto:
 cd PythonWebProyects_POKEDEX
 
-## Instala las dependencias necesarias:
+## 3. Instala las dependencias necesarias:
 pip install -r requirements.txt
 
 
